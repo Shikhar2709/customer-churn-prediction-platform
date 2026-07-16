@@ -51,7 +51,7 @@ customer-churn-prediction-platform/
 ├── notebooks/
 │   └── exploratory_analysis.py    # Exploratory script folder
 │
-├── main.py                        # Landing page and introduction
+├── Home.py                        # Landing page and introduction
 ├── train_model.py                 # Training script pipeline CLI
 ├── test_pipeline.py               # Unit verification test suite
 ├── requirements.txt               # Dependencies
@@ -140,7 +140,7 @@ python test_pipeline.py
 ### 5. Launch UI Dashboard
 Run the Streamlit web application locally:
 ```bash
-streamlit run main.py
+streamlit run Home.py
 ```
 Open [http://localhost:8501](http://localhost:8501) in your browser.
 
@@ -153,7 +153,7 @@ Streamlit Community Cloud makes it simple to host your app directly from a GitHu
 
 1. Push your local project code (including `data/` and `models/` comparison files, but excluding `.venv` and `best_model.joblib`) to a **public GitHub repository**.
 2. Sign in to [Streamlit Share](https://share.streamlit.io/).
-3. Click **New App**, select your Repository, Branch, and Main file path (`main.py`).
+3. Click **New App**, select your Repository, Branch, and Main file path (`Home.py`).
 4. Click **Deploy**. Streamlit will automatically read `requirements.txt`, install dependencies, and host your dashboard.
 5. In the app settings, or in the repository itself, make sure the model is trained as a deployment build step (e.g. your deploy build command runs `python train_model.py` to create `best_model.joblib` on the container, or you commit the model file if you have Git LFS setup). Running `python train_model.py` dynamically ensures that the model binary is built directly matching the system architecture!
 

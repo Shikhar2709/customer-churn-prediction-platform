@@ -33,7 +33,7 @@ Thank you for your interest in contributing to ChurnRadar! We welcome contributi
 7. **Make your changes** and verify they work:
    ```bash
    python test_pipeline.py
-   streamlit run main.py
+   streamlit run Home.py
    ```
 8. **Commit your changes** with descriptive messages:
    ```bash
