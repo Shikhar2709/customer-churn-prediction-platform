@@ -15,7 +15,7 @@ setup_page("Home")
 # Main Header
 st.markdown("""
 <div class='animate-fade-in'>
-    <h1 style='text-align: center; margin-bottom: 0px;'>🎯 ChurnRadar</h1>
+    <h1 style='text-align: center; margin-bottom: 0px;'>🎯 Churn Radar</h1>
     <h3 style='text-align: center; color: #14B8A6; font-weight: 500; margin-top: 0px; margin-bottom: 2rem;'>
         Customer Churn Prediction & Business Analytics Platform
     </h3>
@@ -51,16 +51,58 @@ with col1:
     
     st.subheader("⚙️ System Architecture & Workflow")
     st.markdown("""
-    ```mermaid
-    graph TD
-        A[Raw Customer Data] --> B[Data Validation & Cleaning]
-        B --> C[Feature Engineering & Scale/Encode]
-        C --> D[Model Training & Comparison]
-        D -->|Best Model Pipeline| E[Joblib Model Storage]
-        E --> F[Inference & Explanation Engine]
-        F --> G[Strategic Business Recommendations]
-        A --> H[Interactive BI Analytics Dashboard]
-    ```
+    <div class='workflow-step animate-fade-in'>
+        <div class='workflow-icon'>📂</div>
+        <div>
+            <strong>1. Data Ingestion & Validation</strong>
+            <div style='font-size: 0.85rem; color: #64748B;'>Checks CSV schema, handles whitespace, maps target class labels, and drops duplicate rows.</div>
+        </div>
+    </div>
+    <div style='text-align: center; color: #14B8A6; margin: -5px 0 5px 0; font-size: 1.2rem; font-weight: bold;'>▼</div>
+    
+    <div class='workflow-step animate-fade-in'>
+        <div class='workflow-icon'>⚙️</div>
+        <div>
+            <strong>2. Automated Preprocessing Pipeline</strong>
+            <div style='font-size: 0.85rem; color: #64748B;'>Standardizes numeric values and one-hot encodes categorical profiles to prepare vectors.</div>
+        </div>
+    </div>
+    <div style='text-align: center; color: #14B8A6; margin: -5px 0 5px 0; font-size: 1.2rem; font-weight: bold;'>▼</div>
+    
+    <div class='workflow-step animate-fade-in'>
+        <div class='workflow-icon'>🧠</div>
+        <div>
+            <strong>3. Classifier Benchmarking Suite</strong>
+            <div style='font-size: 0.85rem; color: #64748B;'>Trains Logistic Regression, Decision Trees, Random Forests, and Gradient Boosting.</div>
+        </div>
+    </div>
+    <div style='text-align: center; color: #14B8A6; margin: -5px 0 5px 0; font-size: 1.2rem; font-weight: bold;'>▼</div>
+    
+    <div class='workflow-step animate-fade-in'>
+        <div class='workflow-icon'>🏆</div>
+        <div>
+            <strong>4. Optimal Model Selection & Serialization</strong>
+            <div style='font-size: 0.85rem; color: #64748B;'>Selects model automatically via F1-Score (Random Forest) and saves pipeline using joblib.</div>
+        </div>
+    </div>
+    <div style='text-align: center; color: #14B8A6; margin: -5px 0 5px 0; font-size: 1.2rem; font-weight: bold;'>▼</div>
+    
+    <div class='workflow-step animate-fade-in'>
+        <div class='workflow-icon'>🔮</div>
+        <div>
+            <strong>5. Real-Time Explainable Inference Engine</strong>
+            <div style='font-size: 0.85rem; color: #64748B;'>Scores individual customer churn risk and breaks down top local risk/loyalty drivers.</div>
+        </div>
+    </div>
+    <div style='text-align: center; color: #14B8A6; margin: -5px 0 5px 0; font-size: 1.2rem; font-weight: bold;'>▼</div>
+    
+    <div class='workflow-step animate-fade-in'>
+        <div class='workflow-icon'>🎯</div>
+        <div>
+            <strong>6. Strategic CRM Recommendations</strong>
+            <div style='font-size: 0.85rem; color: #64748B;'>Maps prediction risks to specific retention actions and visualizes segments on the dashboard.</div>
+        </div>
+    </div>
     """, unsafe_allow_html=True)
 
 with col2:
