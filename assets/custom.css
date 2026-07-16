@@ -313,3 +313,49 @@ div.stButton > button:first-child:hover {
     background: linear-gradient(135deg, #059669 0%, #065F46 100%);
     box-shadow: 0 10px 15px -3px rgba(5, 150, 105, 0.3);
 }
+
+/* Workflow Timeline Steps styling */
+.workflow-step {
+    background-color: var(--secondary-background-color, #F8FAFC) !important;
+    color: var(--text-color, #0F172A) !important;
+    border: 1px solid var(--border-color, #E2E8F0) !important;
+    border-radius: 12px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    border-left: 4px solid #14B8A6 !important;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+}
+
+.workflow-step:hover {
+    transform: translateX(6px);
+    border-left-color: #0F766E !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.workflow-icon {
+    font-size: 1.5rem;
+    background-color: rgba(20, 184, 166, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 42px;
+    height: 42px;
+}
+
+@media (prefers-color-scheme: dark) {
+    .workflow-step {
+        background-color: #1E293B !important;
+        border-color: #334155 !important;
+        color: #f1f5f9 !important;
+    }
+    .workflow-step strong {
+        color: #f1f5f9 !important;
+    }
+    .workflow-step div {
+        color: #94a3b8 !important;
+    }
+}
