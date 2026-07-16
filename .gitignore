@@ -1,0 +1,32 @@
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Streamlit
+.streamlit/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Models & Data (suggested to train model rather than committing binary files)
+models/best_model.joblib
+# Keep comparison metrics & importances for quick caching in Streamlit if desired, 
+# but if they are recreated at build time they can be ignored.
+# We will allow committing JSON cache configs for easier deployment.

@@ -1,0 +1,97 @@
+[
+    {
+        "Feature": "Contract",
+        "Importance_Mean": 0.007239176721078833,
+        "Importance_Std": 0.007516367520155424
+    },
+    {
+        "Feature": "InternetService",
+        "Importance_Mean": 0.006387508871540182,
+        "Importance_Std": 0.004420840738792735
+    },
+    {
+        "Feature": "tenure",
+        "Importance_Mean": 0.0034066713981547813,
+        "Importance_Std": 0.0030575811538024436
+    },
+    {
+        "Feature": "TotalCharges",
+        "Importance_Mean": 0.0028388928317956363,
+        "Importance_Std": 0.00411394655676067
+    },
+    {
+        "Feature": "Partner",
+        "Importance_Mean": 0.0021291696238467496,
+        "Importance_Std": 0.001003700186212272
+    },
+    {
+        "Feature": "Dependents",
+        "Importance_Mean": 0.0007097232079489535,
+        "Importance_Std": 0.0013466051072398835
+    },
+    {
+        "Feature": "PaperlessBilling",
+        "Importance_Mean": 0.000567778566359145,
+        "Importance_Std": 0.0012210539768690634
+    },
+    {
+        "Feature": "StreamingTV",
+        "Importance_Mean": 0.00028388928317959474,
+        "Importance_Std": 0.0018831084686191102
+    },
+    {
+        "Feature": "gender",
+        "Importance_Mean": 6.661338147750939e-17,
+        "Importance_Std": 0.0016184179206517057
+    },
+    {
+        "Feature": "PhoneService",
+        "Importance_Mean": -0.0002838892831795503,
+        "Importance_Std": 0.0005677785663591006
+    },
+    {
+        "Feature": "OnlineBackup",
+        "Importance_Mean": -0.0008516678495386288,
+        "Importance_Std": 0.003400751895162799
+    },
+    {
+        "Feature": "SeniorCitizen",
+        "Importance_Mean": -0.0012775017743079653,
+        "Importance_Std": 0.0012210539768690634
+    },
+    {
+        "Feature": "StreamingMovies",
+        "Importance_Mean": -0.0015613910574875157,
+        "Importance_Std": 0.0010430758308516055
+    },
+    {
+        "Feature": "TechSupport",
+        "Importance_Mean": -0.0015613910574875378,
+        "Importance_Std": 0.0016431280202683128
+    },
+    {
+        "Feature": "OnlineSecurity",
+        "Importance_Mean": -0.0028388928317955252,
+        "Importance_Std": 0.003077286499457609
+    },
+    {
+        "Feature": "MultipleLines",
+        "Importance_Mean": -0.00468417317246268,
+        "Importance_Std": 0.0021805949603601557
+    },
+    {
+        "Feature": "PaymentMethod",
+        "Importance_Mean": -0.0051100070972320165,
+        "Importance_Std": 0.0018177783498744768
+    },
+    {
+        "Feature": "MonthlyCharges",
+        "Importance_Mean": -0.005251951738821803,
+        "Importance_Std": 0.0024421079537381477
+    },
+    {
+        "Feature": "DeviceProtection",
+        "Importance_Mean": -0.005961674946770712,
+        "Importance_Std": 0.0017151236300347143
+    }
+]

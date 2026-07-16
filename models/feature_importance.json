@@ -1,0 +1,162 @@
+[
+    {
+        "Feature": "cat__Contract_Month-to-month",
+        "Importance": 0.1484899670591235
+    },
+    {
+        "Feature": "num__tenure",
+        "Importance": 0.12578557933142917
+    },
+    {
+        "Feature": "num__TotalCharges",
+        "Importance": 0.0853078827313111
+    },
+    {
+        "Feature": "cat__TechSupport_No",
+        "Importance": 0.07947464270303622
+    },
+    {
+        "Feature": "cat__Contract_Two year",
+        "Importance": 0.07244089948537794
+    },
+    {
+        "Feature": "num__MonthlyCharges",
+        "Importance": 0.06147832756491498
+    },
+    {
+        "Feature": "cat__OnlineSecurity_No",
+        "Importance": 0.051088882590623726
+    },
+    {
+        "Feature": "cat__PaymentMethod_Electronic check",
+        "Importance": 0.041067285835772085
+    },
+    {
+        "Feature": "cat__InternetService_Fiber optic",
+        "Importance": 0.03857554492493654
+    },
+    {
+        "Feature": "cat__Contract_One year",
+        "Importance": 0.027171736112266025
+    },
+    {
+        "Feature": "cat__OnlineBackup_No",
+        "Importance": 0.026025679235660376
+    },
+    {
+        "Feature": "cat__InternetService_DSL",
+        "Importance": 0.023011538607917527
+    },
+    {
+        "Feature": "cat__OnlineSecurity_Yes",
+        "Importance": 0.01978243071579173
+    },
+    {
+        "Feature": "cat__DeviceProtection_No internet service",
+        "Importance": 0.012819972633678081
+    },
+    {
+        "Feature": "cat__DeviceProtection_No",
+        "Importance": 0.012794017827996475
+    },
+    {
+        "Feature": "cat__PaperlessBilling_Yes",
+        "Importance": 0.012082339171588775
+    },
+    {
+        "Feature": "cat__TechSupport_Yes",
+        "Importance": 0.011724884925887535
+    },
+    {
+        "Feature": "cat__OnlineSecurity_No internet service",
+        "Importance": 0.011341429900452626
+    },
+    {
+        "Feature": "cat__OnlineBackup_No internet service",
+        "Importance": 0.010131963181396761
+    },
+    {
+        "Feature": "cat__TechSupport_No internet service",
+        "Importance": 0.009789127447033648
+    },
+    {
+        "Feature": "cat__StreamingMovies_No internet service",
+        "Importance": 0.00808347012155623
+    },
+    {
+        "Feature": "cat__gender_Male",
+        "Importance": 0.007686139815969906
+    },
+    {
+        "Feature": "cat__OnlineBackup_Yes",
+        "Importance": 0.007459517028861214
+    },
+    {
+        "Feature": "cat__Dependents_Yes",
+        "Importance": 0.007322559034605253
+    },
+    {
+        "Feature": "cat__PaymentMethod_Credit card (automatic)",
+        "Importance": 0.0071855439445217
+    },
+    {
+        "Feature": "cat__Partner_Yes",
+        "Importance": 0.006954015487790127
+    },
+    {
+        "Feature": "cat__StreamingMovies_Yes",
+        "Importance": 0.0068176828649759305
+    },
+    {
+        "Feature": "cat__PaymentMethod_Bank transfer (automatic)",
+        "Importance": 0.006517715863825178
+    },
+    {
+        "Feature": "cat__MultipleLines_Yes",
+        "Importance": 0.006340904216148582
+    },
+    {
+        "Feature": "cat__SeniorCitizen_Yes",
+        "Importance": 0.006232001846413303
+    },
+    {
+        "Feature": "cat__StreamingTV_Yes",
+        "Importance": 0.006164751283222736
+    },
+    {
+        "Feature": "cat__InternetService_No",
+        "Importance": 0.006082297330942515
+    },
+    {
+        "Feature": "cat__PaymentMethod_Mailed check",
+        "Importance": 0.005874578372079037
+    },
+    {
+        "Feature": "cat__StreamingMovies_No",
+        "Importance": 0.005853136608649266
+    },
+    {
+        "Feature": "cat__StreamingTV_No",
+        "Importance": 0.005504072981934972
+    },
+    {
+        "Feature": "cat__MultipleLines_No",
+        "Importance": 0.005119148371621756
+    },
+    {
+        "Feature": "cat__StreamingTV_No internet service",
+        "Importance": 0.004496537661885384
+    },
+    {
+        "Feature": "cat__DeviceProtection_Yes",
+        "Importance": 0.003919890675682518
+    },
+    {
+        "Feature": "cat__MultipleLines_No phone service",
+        "Importance": 0.003346107020206369
+    },
+    {
+        "Feature": "cat__PhoneService_Yes",
+        "Importance": 0.002655797482913202
+    }
+]

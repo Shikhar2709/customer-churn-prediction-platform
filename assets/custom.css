@@ -1,0 +1,271 @@
+/* Custom CSS for ChurnRadar - Customer Churn Prediction & Business Analytics Platform */
+
+/* Main Font & Typography Imports */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* Apply Outfit font to headers, Inter to body */
+h1, h2, h3, .stHeader {
+    font-family: 'Outfit', sans-serif !important;
+    font-weight: 700;
+    color: #0F766E; /* Dark Teal primary */
+}
+
+body, .stText, p, span, li, label, div {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Sidebar Custom Styling */
+[data-testid="stSidebar"] {
+    background-color: #0F172A !important; /* Dark Slate background */
+    color: #E2E8F0 !important;
+    border-right: 1px solid #1E293B;
+}
+
+[data-testid="stSidebar"] h1, [data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 {
+    color: #14B8A6 !important; /* Teal for sidebar headers */
+}
+
+/* Sidebar Active/Inactive Item Enhancements */
+[data-testid="stSidebarNav"] ul {
+    padding-top: 1.5rem;
+}
+
+[data-testid="stSidebarNav"] li a {
+    border-radius: 8px;
+    margin: 4px 10px;
+    padding: 8px 12px !important;
+    transition: all 0.3s ease;
+}
+
+[data-testid="stSidebarNav"] li a:hover {
+    background-color: #1E293B !important;
+    color: #14B8A6 !important;
+    transform: translateX(4px);
+}
+
+/* KPI Cards Container */
+.kpi-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+/* Individual KPI Card Styling */
+.kpi-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 1.5rem;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.05), 0 2px 4px -2px rgb(0 0 0 / 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Dark mode fallback for KPI Card */
+@media (prefers-color-scheme: dark) {
+    .kpi-card {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        border: 1px solid #334155;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+    }
+    .kpi-card-value {
+        color: #f8fafc !important;
+    }
+    .kpi-card-label {
+        color: #94a3b8 !important;
+    }
+}
+
+.kpi-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-color: #14B8A6;
+}
+
+/* Metric Colors and Accents */
+.kpi-card-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #64748B;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.kpi-card-value {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #0F172A;
+    line-height: 1.2;
+}
+
+.kpi-card-delta {
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.delta-up {
+    color: #ef4444; /* red for churn increases */
+}
+
+.delta-down {
+    color: #10b981; /* green for churn decreases */
+}
+
+/* Metric Indicators */
+.indicator-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #e2e8f0;
+}
+
+.indicator-bar.teal {
+    background: linear-gradient(90deg, #0f766e, #14b8a6);
+}
+
+.indicator-bar.red {
+    background: linear-gradient(90deg, #b91c1c, #ef4444);
+}
+
+.indicator-bar.green {
+    background: linear-gradient(90deg, #047857, #10b981);
+}
+
+.indicator-bar.amber {
+    background: linear-gradient(90deg, #b45309, #f59e0b);
+}
+
+/* Success & Warning Custom Banners */
+.alert-box {
+    padding: 1.25rem;
+    border-radius: 12px;
+    margin: 1rem 0;
+    border-left: 5px solid;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+.alert-success {
+    background-color: #ECFDF5;
+    border-color: #10B981;
+    color: #065F46;
+}
+
+.alert-warning {
+    background-color: #FEF2F2;
+    border-color: #EF4444;
+    color: #991B1B;
+}
+
+.alert-info {
+    background-color: #EFF6FF;
+    border-color: #3B82F6;
+    color: #1E40AF;
+}
+
+@media (prefers-color-scheme: dark) {
+    .alert-success {
+        background-color: #064E3B;
+        border-color: #10B981;
+        color: #A7F3D0;
+    }
+    .alert-warning {
+        background-color: #7F1D1D;
+        border-color: #EF4444;
+        color: #FEE2E2;
+    }
+    .alert-info {
+        background-color: #1E3A8A;
+        border-color: #3B82F6;
+        color: #DBEAFE;
+    }
+}
+
+/* Recommendation Cards styling */
+.recommendation-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 0.02);
+    border-left: 4px solid #14B8A6;
+}
+
+@media (prefers-color-scheme: dark) {
+    .recommendation-card {
+        background-color: #1E293B;
+        border-color: #334155;
+    }
+}
+
+/* Custom transitions and animations */
+.animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Table View */
+div[data-testid="stTable"] table {
+    width: 100% !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+}
+
+/* Custom styling for streamlit elements */
+div.stButton > button:first-child {
+    background-color: #0F766E !important;
+    color: white !important;
+    border-radius: 8px !important;
+    border: none !important;
+    padding: 0.5rem 1.5rem !important;
+    font-weight: 600 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 6px -1px rgba(15, 118, 110, 0.2) !important;
+}
+
+div.stButton > button:first-child:hover {
+    background-color: #14B8A6 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 12px -1px rgba(20, 184, 166, 0.4) !important;
+}
+
+/* Prediction Result Area styling */
+.prediction-box {
+    border-radius: 16px;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.prediction-box.churn {
+    background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+    box-shadow: 0 10px 15px -3px rgba(220, 38, 38, 0.3);
+}
+
+.prediction-box.no-churn {
+    background: linear-gradient(135deg, #059669 0%, #065F46 100%);
+    box-shadow: 0 10px 15px -3px rgba(5, 150, 105, 0.3);
+}
